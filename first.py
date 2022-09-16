@@ -1,4 +1,10 @@
-from distutils.dir_util import copy_tree
+import re
 
-
-copy_tree("D:/ali/import/", "D:/")
+text = "a"
+patt = "^[a-z]$"
+v = re.match(patt, text)
+print(v.group())
+if v is None:
+    print("No")
+else:
+    print("Yes")
