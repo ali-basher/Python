@@ -36,7 +36,7 @@ Comments
 """
 ````
 
-3- Data type In Python
+4- Data type In Python
 ````python
 # -----------------------------------------
 # type() fun for know data type
@@ -62,7 +62,7 @@ print(type({"One": 1, "Two": 2, "Three": 3}))  # dict => Dictionary
 print(type(2 == 5))  # bool => Boolean
 ````
 
-4- Variables Part 1 In Python
+5- Variables Part 1 In Python
 ````python
 # -------------------------------------------
 # -- Variables --
@@ -84,7 +84,7 @@ my_name = "Ali Basheer"  # Two Word => snake_case
 print(name, myName, my_name)
 ````
 
-5- Variables Part 2 In Python
+6- Variables Part 2 In Python
 ````python
 # -------------------------------------------
 # -- Variables --
