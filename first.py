@@ -1,38 +1,59 @@
-# -----------------------------
-# String Indexing & Slicing
-# [1] All Data in Python ismObject
-# [2] Object Contain Elements
-# [3] Every Element Has Its Own Index
-# [4] Python Use Zero Based Index ( Index Start From Zero )
-# [5] Use Square Brackets To Access Element
-# [6] Enable Accessing Parts Of Strings, Tuples or Lists
-# -----------------------------
+# --------------------
+# -- String Methods --
+# --------------------
 
-# Indexing ( Access Single Item )
+# split() rsplit()
 
-MyString = "I Love Python"
+a = "I Love Python, Java, C, C++ and C#"
 
-print(MyString[0])  # Index 0 => I
-print(MyString[9])  # Index 9 => t
+print(a.split())
 
-print(MyString[-1])  # Index -1 => First Character From End
-print(MyString[-6])  # Index -6 => 6th Character From End
+b = "I-Love-Python-and-Java"
 
-# Slicing ( Access Multiple Sequence Items )
-# [Start:End] End Not Included
-# [Start:End:Steps]
+print(b.split("-"))
 
-print(MyString[2:6])  # Love
-print(MyString[7:11])  # Pyth
+c = "I-Love-Python-and-Java-and-C++"
 
-print(MyString[:10])  # If Start Is Not Here Will Start From 0 ( I Love Pyt )
-print(MyString[5:])  # If Start Is Not Here Will Go The End~ ( e Python )
+print(c.split("-", 3))
 
-print(MyString[:])  # Full Data
+c = "I-Love-Python-and-Java-and-C++"
 
-print(MyString[0::1])  # Full Data
-print(MyString[::1])  # Full Data
+print(c.rsplit("-", 3))
 
-print(MyString[::2])
-print(MyString[::3])
+# center()
 
+e = "Python"
+print(e.center(12))  # Spaces
+print(e.center(12, '#'))  # Hashes
+print(e.center(12, '@'))  # @
+
+f = "I Love Python and C# Because Python And C# is Easy"
+print(f.count("Python"))
+print(f.count("C#"))
+
+print(f.count("Python", 0, 15))
+print(f.count("C#", 0, 33))
+
+# swapcase()
+
+g = "I Love Python"
+h = "i lOVE pYTHON"
+
+print(g.swapcase())
+print(h.swapcase())
+
+# starswith()
+
+g = "I Love Python"
+
+print(g.startswith('I'))
+print(g.startswith('S'))
+print(g.startswith('P', 7, 12))
+
+# endswith()
+
+g = "I Love Python"
+
+print(g.endswith("n"))
+print(g.endswith("S"))
+print(g.endswith("e", 2, 6))
